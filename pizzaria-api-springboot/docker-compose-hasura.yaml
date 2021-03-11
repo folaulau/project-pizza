@@ -1,0 +1,20 @@
+version: '3.6'
+services:
+  graphql-engine:
+    image: hasura/graphql-engine:v1.3.3
+    ports:
+    - "8098:8080"
+    restart: always
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:test@host.docker.internal:5555/pizzaria
+      ## enable the console served by server
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
+      ## enable debugging mode. It is recommended to disable this in production
+      HASURA_GRAPHQL_DEV_MODE: "true"
+      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
+      ## uncomment next line to set an admin secret
+      HASURA_GRAPHQL_ADMIN_SECRET: test
+      HASURA_GRAPHQL_LOG_LEVEL: debug
+volumes:
+  db_data:
+
