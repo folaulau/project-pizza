@@ -1,0 +1,394 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicons/favicon.ico">
+
+    <title>Pizzaria</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" >
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        Pizzaria
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a class="nav-link px-2 link-dark" href="/menu.html">Menu</a></li>
+        <li><a class="nav-link px-2 link-dark" href="/location.html">Location</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a type="button" class="btn btn-outline-primary me-2" href="/checkout.html">Checkout</a>
+        <a type="button" class="btn btn-outline-primary me-2" href="/login.html">Login</a>
+        <a type="button" class="btn btn-outline-primary me-2" href="/signup.html">Sign-up</a>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1>Menu</h1>
+        </div>
+      </section>
+      <section class="ext-center">
+        <div class="container">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pizza-tab" aria-controls="pizza" data-bs-toggle="tab" data-bs-target="#pizza" type="button" role="tab"  aria-selected="true">Pizza</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="chicken-tab" aria-controls="chicken" data-bs-toggle="tab" data-bs-target="#chicken" type="button" role="tab" aria-selected="false">Chicken</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="drinks-tab" aria-controls="drinks" data-bs-toggle="tab" data-bs-target="#drinks" type="button" role="tab" aria-selected="false">Drinks</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="tab-content py-5">
+        <div class="container tab-pane fade show active" id="pizza" role="tabpanel" aria-labelledby="pizza-tab">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="pizza.html?type=cheese">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/pizza_cheese.jpg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Cheese Pizza</strong>
+                    <br>
+                    Your Cheese Pizza.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="pizza.html?type=cheese">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/pizza_pepperoni.jpg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Pepperoni Pizza</strong>
+                    <br>
+                    Yummy Pepperoni.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="pizza.html?type=cheese">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/pizza_veggie.jpg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Veggie Pizza</strong>
+                    <br>
+                    Healthy Veggie.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="pizza.html?type=cheese">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/pizza_bbq_chicken.jpg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>BBQ Chicken Pizza</strong>
+                    <br>
+                    BBQ Flavor.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="pizza.html?type=cheese">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/pizza_hawaiian.jpg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Hawaiian Pizza</strong>
+                    <br>
+                    Aloha
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="pizza.html?type=cheese">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/pizza_meat_lover.jpg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Meat Lover Pizza</strong>
+                    <br>
+                    To all Meat Lover
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container tab-pane fade" id="chicken" role="tabpanel" aria-labelledby="chicken-tab">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="chicken.html?type=wings">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/chicken_wings.jpeg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Chicken Wings</strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="chicken.html?type=boneless">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/chicken_boneless.jpeg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Boneless Chicken</strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="chicken.html?type=fried">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/chicken_fried.jpeg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Fried Chicken</strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="drink.html?type=sprite">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/drink_sprite.jpeg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Sprite</strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="drink.html?type=fanta">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/drink_fanta.jpeg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Fanta</strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="drink.html?type=pepsi">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/drink_pepsi.jpeg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Pepsi</strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="drink.html?type=juice">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/drink_juice.jpeg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Juice</strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="drink.html?type=gatorade">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/drink_gatorade.jpeg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Gatorade</strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <a href="drink.html?type=naked">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/assets/images/drink_naked.jpeg" />
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Naked</strong>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <!-- <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> -->
+            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

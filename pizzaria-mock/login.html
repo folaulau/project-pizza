@@ -10,47 +10,30 @@
 
     <title>Pizzaria</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!-- Bootstrap core CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" >
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom box-shadow">
-        <a class="navbar-brand" href="/">
-          Pizzaria
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/online-order.html">Order Online</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/location.html">Location</a>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Menu
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu menu-drop-down" role="menu" aria-labelledby="menu1">
-                  <li role="presentation"><a role="menuitem" href="/menu-pizza.html">Pizza</a></li>
-                  <li role="presentation"><a role="menuitem" href="/menu-chicken.html">Chicken</a></li>
-                  <li role="presentation"><a role="menuitem" href="/menu-drinks.html">Drinks</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            <a type="button" class="btn btn-outline-primary" href="/login.html">Log in</a>
-            <a type="button" class="btn btn-outline-primary" href="/signup.html">Sign up</a>
-          </span>
-        </div>
-      </nav>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        Pizzaria
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a class="nav-link px-2 link-dark" href="/menu.html">Menu</a></li>
+        <li><a class="nav-link px-2 link-dark" href="/location.html">Location</a></li>
+        
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a type="button" class="btn btn-outline-primary me-2" href="/checkout.html">Checkout</a>
+        <a type="button" class="btn btn-outline-primary me-2" href="/login.html">Login</a>
+          <a type="button" class="btn btn-outline-primary me-2" href="/signup.html">Sign-up</a>
+      </div>
     </header>
 
     <main role="main">
@@ -91,7 +74,7 @@
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
           <div class="col-12 col-md">
-            <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+            <!-- <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> -->
             <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
           </div>
           <div class="col-6 col-md">
@@ -131,7 +114,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

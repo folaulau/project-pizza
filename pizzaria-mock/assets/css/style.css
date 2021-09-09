@@ -1,18 +1,18 @@
 
 .front-page-meny-pizza{
-    background-image: url("/images/menu_pizza.jpg");
+    background-image: url("/assets/images/menu_pizza.jpg");
     background-repeat: no-repeat, repeat;
     background-position: center;
     height: 250px;
 }
 .front-page-meny-chicken{
-    background-image: url("/images/menu_chicken.jpg");
+    background-image: url("/assets/images/menu_chicken.jpg");
     background-repeat: no-repeat, repeat;
     background-position: center;
     height: 250px;
 }
 .front-page-meny-drinks{
-    background-image: url("/images/menu_drinks.jpg");
+    background-image: url("/assets/images/menu_drinks.jpg");
     background-repeat: no-repeat, repeat;
     background-position: center;
     height: 250px;
@@ -38,14 +38,14 @@
 }
 
 .online-order-pickup{
-    background-image: url("/images/pickup.png");
+    background-image: url("/assets/images/pickup.png");
     background-repeat: no-repeat, repeat;
     background-position: center;
     height: 250px;
 }
 
 .online-order-delivery{
-    background-image: url("/images/delivery.png");
+    background-image: url("/assets/images/delivery.png");
     background-repeat: no-repeat, repeat;
     background-position: center;
     height: 250px;
