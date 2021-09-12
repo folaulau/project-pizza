@@ -41,13 +41,67 @@
       <div class="py-5">
         <div class="container">
           <div class="row">
-            <div class="col-8">
-              Descriptions: show chicken details<br>
-              1. type<br>
-              2. source<br>
+            <div class="col-7 text-center">
+              <div class="row text-center">
+                <div class="col-6 offset-3">
+                  <div class="card" style="border: none;">
+                    <img class="bd-placeholder-img" width="100%" height="250" src="/assets/images/chicken_wings.jpeg" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-4">
-              Box: show quantity and total
+            <div class="col-5">
+              <div class="row">
+                <div class="col-12">
+                  <h4>Chicken Wings</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  $8.49 320 cal
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-12">
+                  Kick it up a notch with our oven-baked bone-in wings tossed in satisfyingly spicy buffalo sauce with just the right amount of heat to enhance our juicy wings. Includes your choice of dipping sauce.
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-9">
+                  <select class="form-select" aria-label="Default select example">
+                    <option value="8-pience" selected>8 Piece</option>
+                    <option value="16-pience">16 Piece</option>
+                    <option value="24-pience">24 Piece</option>
+                    <option value="32-pience">32 Piece</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <select class="form-select" aria-label="Default select example">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-12">
+                  <select class="form-select" aria-label="Default select example">
+                    <option value="ranch" selected>Ranch</option>
+                    <option value="buffalo">Buffalo</option>
+                    <option value="barbaque">Barbaque</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4">
+                  <button type="button" class="btn btn-outline-primary rounded-pill">Add To Order</button>
+                </div>
+                <div class="col-4">
+                  
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -101,5 +155,34 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
     <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/jquery/jquery.min.js"></script>
+    <script>
+      // var triggerEl = document.querySelector('#menuTab button[data-bs-target="#chicken"]');
+      // bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+      $(document).ready(function(){
+        var getUrlQueryParams = function(){
+          var vars = [], hash;
+          var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+          for(var i = 0; i < hashes.length; i++){
+              hash = hashes[i].split('=');
+              vars.push(hash[0]);
+              vars[hash[0]] = hash[1];
+          }
+          return vars;
+        }
+
+        console.log(getUrlQueryParams());
+
+        let queryParams = getUrlQueryParams();
+
+        let type = queryParams['type'];
+
+        if(type!=null){
+          
+        }
+
+        
+      });
+    </script>
   </body>
 </html>
